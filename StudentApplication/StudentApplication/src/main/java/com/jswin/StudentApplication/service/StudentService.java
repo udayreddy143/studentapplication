@@ -10,7 +10,7 @@ public class StudentService {
     private StudentRepo studentrepo;
 
 
-  void saveStudentDetails(Student student){
+  public void saveStudentDetails(Student student){
       StudentEntity entity= new StudentEntity();
 
       entity.setAddress(student.getAddress());
