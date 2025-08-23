@@ -4,8 +4,8 @@ import com.jswin.StudentApplication.service.Test;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Component;
 
-import com.jswin.StudentApplication.entity.Student;
+import com.jswin.StudentApplication.entity.StudentEntity;
 @Component
-public interface StudentRepo extends JpaRepository<Student,Long> {
+public interface StudentRepo extends JpaRepository<StudentEntity,Long> {
 
 }
