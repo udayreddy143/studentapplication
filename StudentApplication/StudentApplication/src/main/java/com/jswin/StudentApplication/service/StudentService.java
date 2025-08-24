@@ -5,6 +5,8 @@ import com.jswin.StudentApplication.entity.StudentEntity;
 import com.jswin.StudentApplication.repo.StudentRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 
+import java.util.List;
+
 public class StudentService {
     @Autowired
     private StudentRepo studentrepo;
@@ -17,5 +19,10 @@ public class StudentService {
       entity.setName(student.getName());
       studentrepo.save(entity);
 
+
   }
+   public List<StudentEntity> getDetails(){
+
+     return studentrepo.findAll();
+   }
 }
