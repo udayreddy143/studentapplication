@@ -4,7 +4,9 @@ import com.jswin.StudentApplication.dto.Student;
 import com.jswin.StudentApplication.entity.StudentEntity;
 import com.jswin.StudentApplication.repo.StudentRepo;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
+@Service
 public class StudentService {
     @Autowired
     private StudentRepo studentrepo;
@@ -15,7 +17,12 @@ public class StudentService {
 
       entity.setAddress(student.getAddress());
       entity.setName(student.getName());
-      studentrepo.save(entity);
+      //studentrepo.save(entity);
 
   }
+
+
+
+
+
 }
